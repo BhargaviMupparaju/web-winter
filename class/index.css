@@ -1,0 +1,45 @@
+th,
+td {
+	border: 1px solid black;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+	/* comment */
+}
+ul {
+	list-style: square;
+}
+ol {
+	list-style: upper-latin;
+}
+div {
+	border: 1px solid black;
+}
+#sometext1 {
+	border: 1px solid red;
+}
+#sometext2 {
+	border: 5px dotted solid green;
+}
+
+#box1 {
+	background-color: aquamarine;
+}
+#box2 {
+	background-color: deepskyblue !important;
+}
+/* . is used to select elements by their class name */
+.box {
+	border: 1px solid red;
+	width: 50;
+	height: 50;
+}
+.box100 {
+	border: 5px solid rebeccapurple;
+	width: 50;
+	height: 50;
+}
+#my-form {
+	border: 1px solid black;
+}

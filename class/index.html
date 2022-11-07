@@ -1,1 +1,137 @@
-<!--comment -->
+<!--My first HTML page -->
+
+<!DOCTYPE html>
+
+<html>
+	<!-- head tag is used store the meta information abou the webpage -->
+	<head>
+		<title>Page Title</title>
+		<!-- link and anchor tags are differnt.if you want to use favicoln -->
+		<link rel="icon" type="image/x-icon" href="" />
+
+		<link rel="stylesheet" href="index.css" type="text/css" />
+		/* class can have multiple class names, the last class name applied in CSS will overrride the previous CSS values */ /* between id and class , id has more priority */
+	</head>
+	<!-- This boday tag is used to showcase the body of the webpage -->
+	<!-- To copy the same line below option+shift+down  -->
+	<body>
+		<!-- using proper html tags will provide the semantic meaning (aka semantic html) this helps screen readers & assistive tech -->
+		<h1>This is a Heading</h1>
+		<h2>This is a Heading</h2>
+		<h3>This is a Heading</h3>
+		<h4>This is a Heading</h4>
+		<h5>This is a Heading</h5>
+		<h6>This is a Heading</h6>
+		<p>This is a Paragraph</p>
+		<p style="color: red"><strong>This is strong paragraph</strong></p>
+		<p>
+			<em> This is a paragraph </em>
+		</p>
+
+		<!-- Link tags -->
+		<!-- target=blank will helps to open the link in seperate tab -->
+		<a href="https://www.google.com" target="_blank" style="color: red; background-color: blue">Google</a>
+		<!-- image tag here we can give file path.there are lot of attributes to define the image -->
+		<img src="" alt="logo" width="" height="" />
+
+		<table>
+			<thead>
+				<tr>
+					<th>Comapny</th>
+					<th>Contact</th>
+					<th>Country</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Alfreds</td>
+					<td>Maria Anders</td>
+					<td>India</td>
+				</tr>
+				<tr>
+					<td>Bhargavi</td>
+					<td>IBM</td>
+					<td>India</td>
+				</tr>
+				<td>maruthi</td>
+				<td>walmart</td>
+				<td>India</td>
+			</tbody>
+		</table>
+		<ul>
+			<!-- unordered list -->
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JS</li>
+			<li>React</li>
+		</ul>
+		<ol>
+			<!-- ordered list -->
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JS</li>
+			<li>React</li>
+		</ol>
+		<!-- div and certain other HTML tags are block level elements-they take full widhth avaialble -->
+		<div id="sometext1">Some text 1</div>
+		<div id="sometext2">Some text 2</div>
+		<!-- Strong and em tags are inline.They continue on the same line until no more width avialable -->
+		<p>
+			<strong>Some strong text</strong> <em>Some emphazise text</em>
+			<!-- if you want to provide certain styling for particular text we can use span -->
+			<span style="color: red">text inside span</span>
+		</p>
+
+		<div id="box1" class="box">Box1</div>
+		<div id="box2" class="box box100" style="width: 50px; height: 50px; border: 1px; background-color: brown !important">Box2</div>
+		<!-- inline style will overwrite the id and class -->
+		<!-- class<id(unique identifier)<style<!important  (priority CSS order)-->
+		<!-- when important is given to both inline and id the pripority order will play the role -->
+
+		<section>
+			<form id="my-form" onsubmit="">
+				<label for="name">
+					Name:
+					<input id="name" type="text" />
+				</label>
+				<br />
+
+				<label for="email">
+					Email:
+					<input id="email" type="email" required placeholder="example@domain.com" />
+				</label>
+				<br />
+				<label for="Password">
+					Password:
+					<input id="Password" type="password" required />
+				</label>
+				<br />
+				<label for="avatar">
+					Avatar Image:
+					<input id="avatar" type="file" required />
+				</label>
+				<button type="reset">Reset</button>
+				<button type="submit">Submit</button>
+			</form>
+		</section>
+		<div class="top">My div</div>
+
+		<section>
+			<p class="top">ABC</p>
+			<p class="bottom">123</p>
+		</section>
+
+		<div class="outer-box">
+			<div class="inner-box">1</div>
+			<div class="inner-box2">2</div>
+		</div>
+
+		<footer>My Footer</footer>
+
+		<div class="top">My div</div>
+		<div class="top">My div</div>
+		<div class="top">My div</div>
+		<div class="top">My div</div>
+	</body>
+	</body>
+</html>
