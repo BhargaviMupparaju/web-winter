@@ -1,0 +1,67 @@
+body {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+.container {
+	background-color: black;
+	height: 100%;
+	width: 100%;
+}
+a:link {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	line-height: 2;
+}
+
+li {
+	margin-top: 10px;
+	color: rgb(220, 191, 30);
+}
+.sidebar {
+	float: left;
+	height: 80%;
+	background-color: darkgoldenrod;
+	width: 20%;
+	flex-wrap: wrap;
+	font-size: 5;
+}
+
+.text-form {
+	float: left;
+	background-color: wheat;
+	width: 30%;
+	height: 80%;
+	margin-bottom: 0;
+	text-align: justify;
+}
+.main-form {
+	float: left;
+	background-color: wheat;
+	width: 50%;
+	height: 100%;
+}
+
+.main-form > form {
+	margin-top: 0%;
+}
+
+.text-form ul {
+	padding-right: 100px;
+}
+
+#contact {
+	text-align: center;
+	padding-top: 20px;
+}
+.footer {
+	float: left;
+	text-align: center;
+	color: white;
+	margin-top: 0%;
+	margin-left: 10%;
+	height: 20%;
+}

@@ -43,3 +43,109 @@ div {
 #my-form {
 	border: 1px solid black;
 }
+
+/* 5 positions in CSS
+
+1.static(default)
+2.relative
+3.fixed
+4.sticky
+5.absolute
+
+*/
+
+/* media query */
+/* min-width means at least 600px or greater */
+
+@media only screen and (min-width: 600px) {
+	body {
+		background-color: aqua;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	body {
+		background-color: rebeccapurple;
+	}
+}
+
+.transition-div {
+	background-color: aquamarine;
+	width: 100px;
+	height: 100px;
+	transition: width 3s, height 10s;
+}
+
+.transition-div:hover {
+	width: 300px;
+	height: 300px;
+	transform: rotate(15deg);
+}
+
+.static {
+	position: static;
+	top: 100px;
+}
+
+.relative {
+	position: relative;
+	left: 100px;
+}
+.absolute {
+	position: absolute;
+}
+
+/* Descendent selectors */
+/* all p tags enclosed inside the div no matter how deeply nested it will still inherit the color */
+div p {
+	background-color: green;
+}
+/* Child selector */
+/* only immediate child will effect because after that it will become the grand child */
+/* to select the adjacent silblings we can give like div + p */
+div > p {
+	background-color: aqua;
+}
+
+a:hover {
+	background-color: red;
+}
+a:visited {
+	color: blueviolet;
+}
+a:active {
+	color: blue;
+}
+.second-link:hover {
+	background-color: brown;
+}
+
+/* Below is also pseudo class combined with combinator selectors */
+ul > li:nth-child(odd) {
+	background-color: blueviolet;
+	color: white;
+}
+ul > li:nth-child(even) {
+	background-color: red;
+	color: white;
+}
+/*  n+3 is all child after 3 including 3
+ul > li:nth-child(n+3) {
+	background-color: red;
+	color: white;
+}  
+
+The color will apply to all multiples of 3
+ul > li:nth-child(3n) {
+	background-color: red;
+	color: white;
+
+*/
+
+p {
+	font-size: 16px;
+}
+
+p > span {
+	font-size: 2em;
+}

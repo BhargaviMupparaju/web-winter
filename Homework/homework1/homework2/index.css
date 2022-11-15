@@ -1,0 +1,59 @@
+body {
+	background-color: gainsboro;
+}
+div {
+	top: 0px;
+}
+.container {
+	width: 400px;
+	display: grid;
+}
+.first {
+	display: inline-block;
+	background-color: azure;
+	width: 240px;
+	max-height: max-content;
+	top: 0;
+}
+
+.second {
+	display: inline-block;
+	width: 160px;
+	background-color: white;
+	height: 300%;
+}
+#flex1 {
+	display: inline-block;
+	margin-left: 40px;
+	margin-bottom: 60px;
+	background-color: wheat;
+	width: 200px;
+	height: 60px;
+}
+#flex2 {
+	margin-left: 80px;
+	background-color: grey;
+	width: 160px;
+	height: 100px;
+	margin-bottom: 30px;
+}
+#flex3 {
+	margin-left: 40px;
+	background-color: green;
+	width: 200px;
+	height: 60px;
+	margin-bottom: 30px;
+}
+
+#flex4 {
+	margin-left: 40px;
+	background-color: wheat;
+	margin-bottom: 30px;
+	width: 200px;
+	height: 60px;
+}
+#flex5 {
+	width: 160px;
+	height: 100%;
+	color: blueviolet;
+}
